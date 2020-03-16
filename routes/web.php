@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('cds');
-});
+Route::get('/', 'CdController@cdIndex')->name('cd.indexCd');
 
 // Chiamo il metodo get, il primo parametro è la url, secondo parametro è il controller
 // Dopo la chiocciola la funzione e la rinomino

@@ -1,8 +1,9 @@
-@include('partials._header')
+@include('partials.header')
 
-<div class="wrapper">
+<div class="container">
     <main>
         @yield('wrapper-cd')
     </main>
 </div>
-@include('partials._footer')
+
+@include('partials.footer')
