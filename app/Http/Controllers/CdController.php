@@ -10,7 +10,7 @@ class CdController extends Controller
     {
         $cds = [
             'path',
-            'name'
+            'name',
         ];
 
         return view('cd.index', compact('cd'));
