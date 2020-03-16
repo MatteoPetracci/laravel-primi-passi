@@ -9,10 +9,43 @@ class CdController extends Controller
     public function cdIndex()
     {
         $cds = [
-            'path',
-            'title',
-            'author',
-            'year'
+            [
+                'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg',
+                'title' => 'New Jersey',
+                'author' => 'Bon Jovi',
+                'year' => 1988
+                
+            ],
+            [
+                'poster' => 'https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg',
+                'title' => 'Live at Wembley',
+                'author' => 'Queen',
+                'year' => 1992
+            ],
+            [
+                'poster' => 'https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg',
+                'title' => "Ten's Summoner's Tales",
+                'author' => 'Queen',
+                'year' => 1993
+            ],
+            [
+                'poster' => 'https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg',
+                'title' => 'Steve Gadd Band',
+                'author' => 'Steve Gadd Band',
+                'year' => 2018
+            ],
+            [
+                'poster' => 'src="https://i.ebayimg.com/images/g/1GwAAOSwFytaKr7l/s-l300.jpg"',
+                'title' => 'Brave new World',
+                'author' => 'Iron Maiden',
+                'year' => 2000
+            ],
+            [
+                'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg',
+                'title' => 'One more car, one more rider',
+                'author' => 'Eric Clapton',
+                'year' => 2002
+            ]
         ];
 
         return view('cd.index', compact('cds'));
