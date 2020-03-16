@@ -35,7 +35,7 @@ class CdController extends Controller
                 'year' => 2018
             ],
             [
-                'poster' => 'src="https://i.ebayimg.com/images/g/1GwAAOSwFytaKr7l/s-l300.jpg"',
+                'poster' => 'https://i.ebayimg.com/images/g/1GwAAOSwFytaKr7l/s-l300.jpg',
                 'title' => 'Brave new World',
                 'author' => 'Iron Maiden',
                 'year' => 2000
@@ -48,6 +48,6 @@ class CdController extends Controller
             ]
         ];
 
-        return view('cd.index', compact('cds'));
+        return view('cdsnew', compact('cds'));
     }
 }
