@@ -1,5 +1,5 @@
-@extends('layouts.cds')
+@extends('layouts.cdsnew')
 
-<main>
-    @yield('wrapper-cd')
-</main>
+@section('wrapper-cd')
+    <h1>Prova</h1>
+@endsection
